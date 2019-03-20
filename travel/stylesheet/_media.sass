@@ -1,0 +1,497 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+
+@media only screen and (min-width : 1800px)
+	#history
+		.container-fluid
+			.col-lg-6 img, .col-md-6 
+				img
+					width: 100%	
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	#search-block
+		.form-group
+			input.form-control
+				margin-right: 10px
+			.form-control-location
+				width: 120px
+			.form-control-date
+				width: 100px
+			.form-control-person
+				width: 100px
+
+	#services
+	ul.service-items
+		margin-bottom: 20px
+		li
+			text-align: left
+			padding-left: 0
+			margin-top: 10px
+
+	#budget-price
+		padding-top: 10px
+		.budget-price-item
+			width: 100%
+			padding: 30px 10px 40px
+			margin-top: 20px
+			margin-bottom: 30px
+			h4
+				font-size: 20px	
+			p.price
+				font-size: 30px
+				margin: 0 -15px
+				
+			ul
+				margin-top: 20px
+				padding: 0 10px
+				li
+					margin-top: 20px
+					.fa
+						margin-right: 5px	
+
+	#hot-tours
+		.hot-tour-item
+		.slider-hot-tours.slick-slider
+			.slick-track, .slick-list
+			button
+				&.slick-next
+					text-align: right
+					margin-right: 50px
+					&::before
+						content: "\f054"
+						font-family: "FontAwesome"
+						font-size: 40px
+						color: $accent
+				&.slick-prev
+					text-align: left
+					margin-left: 50px
+					&::before
+						content: "\f053"	
+						font-family: "FontAwesome"
+						font-size: 40px
+						color: $accent					
+											
+
+	#booking 
+		padding-bottom: 0
+		.col-md-8
+			padding-left: 30px
+		ul.nav-tabs .nav-item a
+			padding-left: 80px	
+			.fa
+				margin-top: -16px
+				left: 27px
+				font-size: 32px	
+		
+
+	#contacts .container-fluid .contact-block .contact-list 
+		padding: 0 15px
+		.contact-list-item .icon
+			margin-right: 10px
+		.col-lg-2
+			padding: 0	
+
+
+	.slick-slider.slider-hot-tours .slick-slide.slick-current.slick-center
+		&::before, &::after
+			display: none
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header
+		.header
+			.top-bar
+				.row
+					.col-sm-2, .col-sm-3, .col-sm-4
+						padding: 0
+				ul.social-icons
+					padding: 0
+					li
+						margin: 0
+			.top-menu
+				nav.main-nav
+					ul.main-menu
+						li
+							margin-right: 10px
+							a
+								font-size: 14px		
+	#services 
+		padding-bottom: 100px
+		ul.service-items
+			margin-bottom: 0	
+	#budget-price
+		.budget-price-item
+			padding: 30px 5px 20px
+			h4
+				font-size: 18px	
+			ul
+				padding: 0
+				li
+					p
+						padding-left: 20px	
+					.fa
+						left: 15px
+	#booking
+		padding-bottom: 0
+		ul.nav-tabs .nav-item a
+			padding-left: 100px	
+			.fa
+				margin-top: -22px
+				left: 40px
+				font-size: 44px	
+
+	#hot-tours
+		.hot-tour-item
+		.slider-hot-tours.slick-slider
+			.slick-track, .slick-list
+			button
+				&.slick-next, &.slick-prev
+					&::before
+						padding: 0	
+
+	.slick-slider.slider-hot-tours .slick-slide.slick-current.slick-center
+		&::before, &::after
+			display: none		
+
+	#sale .container-fluid 
+		padding-top: 0
+		.bg-mask
+			margin-left: 0
+		.sale-item
+			margin-top: 50px	
+
+																	
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	header
+		height: auto
+		background-position: 35% 0
+		.header
+			.col-sm-2, .col-sm-3, .col-sm-4
+				padding: 0
+				.logo
+					margin-left: 20px
+				ul.social-icons, ul.athority
+					text-align: center
+					li
+						margin: 0	
+		.main-banner
+			.main-banner-content
+				padding: 0 10px	
+				h1
+					font-size: 36px	
+	#search-block
+		.form-inline
+			.form-group
+				display: inline-block
+				.form-control-location
+					width: 100px
+				.form-control-date
+					width: 80px
+				.form-control-person
+					width: 50px	
+	#services
+		ul.service-items
+			padding: 10px
+
+
+
+	#booking 
+		ul.nav-tabs .nav-item a
+			padding: 30px 0
+			.fa
+				left: 50px
+			&.active::after
+				border-width: 31px
+				right: -52px
+				border-left-width: 20px
+				z-index: 1
+			p
+				display: none
+		.tab-pane
+			text-align: justify					
+
+	#budget-price
+		.col-sm-4.col-md-4
+			padding: 0
+			.budget-price-item
+				max-width: 90%
+				width: 400px
+				padding: 30px 10px 40px
+				margin: 20px auto
+				h4
+					font-size: 18px	
+				p.price
+					font-size: 30px
+					margin: 0 -15px
+					
+				ul
+					margin-top: 20px
+					padding: 0 10px
+					li
+						margin-top: 20px
+						.fa
+							margin-right: 30px
+						p
+							padding-left: 30px		
+
+	#hot-tours
+		padding-bottom: 20px
+		.hot-tour-item
+			width: 90% !important
+		.slider-hot-tours.slick-slider
+			.slick-track, .slick-list
+				padding: 0 0 70px 0
+			button
+				width: 90%
+				padding: 15px
+				&.slick-next
+					text-align: right
+					margin-right: 50px
+					&::before
+						content: "\f054"
+						font-family: "FontAwesome"
+						font-size: 40px
+						color: $accent
+						padding: 0
+				&.slick-prev
+					text-align: left
+					margin-left: 50px
+					&::before
+						content: "\f053"	
+						font-family: "FontAwesome"
+						font-size: 40px
+						color: $accent
+						padding: 0
+
+	#country-sight .country-sight-items
+		margin-bottom: 10px
+		.country-sight-item
+			margin-bottom: 20px
+			max-width: 100%
+			width: 400px
+			margin: 20px auto
+			button
+				padding: 5px 10px
+			p.country-sight-item-heading
+				margin-top: 20px	
+	
+	#sale .container-fluid
+		padding: 0
+		.bg-mask
+			width: 150%
+			height: 150%
+			transform: scale(0.8)
+			margin-left: -12%
+
+		.sale-item
+			background-color: rgba(255,255,255, 0.9)
+			padding: 20px
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			margin: 7%
+			ul
+				li
+					margin-right: 10px
+			button
+				margin-left: 10px	
+
+	
+	#testimonial
+		padding: 0
+		.slick-prev, .slick-next
+			top: 75%
+
+	#contacts .container-fluid .contact-block
+		ul.contact-social-list
+				margin-bottom: 30px	
+		.contact-list
+			margin: 30px 0
+			.row
+				margin: 0
+				.col-sm-4
+					padding: 0
+					.icon
+						margin-right: 5px
+					
+	.slick-slider.slider-hot-tours .slick-slide.slick-current.slick-center
+		&::before, &::after
+			display: none	
+		
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	header 
+		height: auto
+		background-position: 30% 0
+		.header .top-bar ul.social-icons
+			margin-top: 20px
+	#search-block
+		.form-inline
+			.form-group
+				label
+					text-align: center
+				.input-group
+					margin: 0 auto
+				button
+					margin: 10px auto
+				.form-control-location
+					width: 240px
+				.form-control-date
+					width: 210px
+				.form-control-person
+					width: 130px
+	#history .container-fluid .history-block .history-description
+		padding: 10px				
+	#services
+		ul.service-items
+			padding: 0
+			li
+				padding-left: 90px	
+
+	#budget-price .budget-price-item ul li
+		max-width: 80%			
+
+	#booking 
+		ul.nav-tabs .nav-item a
+			padding: 30px 0
+			.fa
+				left: 20px
+			&.active::after
+				border-width: 31px
+				right: -52px
+				border-left-width: 20px
+				z-index: 1
+			p
+				display: none
+		.tab-pane
+			text-align: justify
+	
+	#sale .container-fluid
+		padding: 0
+		.bg-mask
+			width: 300%
+			height: 300%
+			transform: scale(1)
+			margin-left: -50%
+		.sale-item
+			width: 90%
+			padding: 20px
+			background-color: rgba(255,255,255, 0.9)
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			margin: 50px auto
+			li
+				margin-right: 35px
+				&:last-child
+					margin-right: 0
+			.sale-item-price
+				display: block
+				text-align: center
+				margin: 5% auto
+			.sale-item-description
+				margin-bottom: 0
+				margin: 5% auto
+			button.btn-sale
+				display: block
+				margin: 0 auto	
+
+	#testimonial .testimonial-slider button
+		&.slick-next
+			right: 0
+		&.slick-prev
+			left: 0	
+												
+
+	#contacts .container-fluid .contact-block
+		.contact-list
+			.row
+				.contact-list-item
+					padding: 0
+					margin-top: 30px
+					border-bottom: 2px solid $accent
+		ul.contact-social-list
+			li
+				margin-right: 10px		
+			
+	.slick-slider.slider-hot-tours .slick-slide.slick-current.slick-center
+		&::before, &::after
+			display: none						
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+	#testimonial .slick-next, #testimonial .slick-prev
+		top: 90%
+
+	#sale .container-fluid
+		.sale-item
+			top: 20px
+			bottom: 20px
+			right: 0
+			left: 0
+			margin: 0 auto
+			.sale-item-price
+				margin: 0
+			.sale-item-description
+				margin: 0	
+
+	#contacts .container-fluid .contact-block .contact-list .row .col-xs-12 
+		padding: 0
+		.contact-list-item
+			padding: 0	
+			text-align: left
+			.icon
+				transform: scale(0.8)
+
+	#hot-tours
+		.hot-tour-item
+		.slider-hot-tours.slick-slider
+			.slick-track, .slick-list
+			button
+				&.slick-next, &.slick-prev
+					&::before
+						margin: 0 -30px
+						padding: 0	
+
+	.slick-slider.slider-hot-tours .slick-slide.slick-current.slick-center
+		&::before, &::after
+			display: none							
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

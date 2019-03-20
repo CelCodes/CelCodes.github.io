@@ -1,0 +1,824 @@
+@import "bourbon"
+@import "vars"
+@import "fonts"
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html
+	width: 100%
+body
+	width: 100%
+	text-align: center
+	overflow-x: hidden
+	p
+		font-family: $Light
+	button.btn.btn-main
+		background-color: $accent
+		color: #333
+		font-size: 15px
+		text-transform: uppercase
+		font-family: $SemiBold
+		padding: 20px 70px		
+		border-color: darken($accent, 5%)
+
+h2
+		margin-top: 20px
+		font-family: $Regular
+		margin-bottom: 20px
+		font-size: 37px
+		&.black
+			margin-top: 70px
+			font-family: $Black
+			margin-bottom: 0		
+
+header
+	width: 100%
+	background-image: url(../image/bg-header.png)
+	background-size: cover
+	color: #fff
+	margin: 0
+	height: 100vh
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background-color: rgba(0,0,0,0.56)
+		z-index: 0
+	.row
+		max-width: 1220px
+		margin: 0 auto
+	.header
+		width: 100%
+		font-size: 14px
+		text-align: center
+		background-color: rgba(0,0,0,0.39)
+		.fa
+			color: $accent
+			font-size: 20px
+			margin-right: 10px
+		.top-bar
+			padding: 20px 0
+			position: relative
+			z-index: 2
+			.row
+				border-bottom: 3px solid #737786
+				padding-bottom: 15px
+			ul.social-icons
+				list-style: none
+				text-align: right
+				padding: 0
+				li
+					display: inline-block
+					margin: 0 10px
+			ul.athority
+				list-style: none
+				text-align: right
+				font-family: $SemiBold
+				li
+					display: inline-block
+					margin: 0 10px
+					a
+						text-decoration: none
+						color: #fff
+						&:hover
+							text-decoration: none
+		.top-menu
+			position: relative
+			z-index: 10
+			.logo
+				height: 30px
+			&.sticky-header
+				width: 100%
+				position: relative
+				z-index: 100
+				.logo
+					float: left
+					display: inline-block
+					margin-left: 50px
+					img
+						max-width: 100%
+						margin-top: 5px
+				&.stickytop
+					position: fixed
+					display: block
+					top: 0
+					left: 0
+					right: 0
+					background-color: rgba(0,0,0,0.6)
+					z-index: 999 !important
+					.logo
+						margin-top: 10px
+			ul.main-menu
+				margin: 10px 0 0
+				height: 100%
+				list-style: none
+				padding-bottom: 25px
+				text-align: right
+				li
+					display: inline-block
+					text-transform: uppercase
+					margin-right: 45px
+					font-size: 16px
+					font-family: $SemiBold
+					&:last-child
+						margin-right: 0	
+					a
+						color: white
+						padding-bottom: 24px
+						text-decoration: none
+						border-bottom: 3px solid transparent
+						&.active
+							border-color: $accent
+			.col-xs-12
+				padding: 0				
+				.nav-xs-checkbox
+					display: none
+				.main-nav
+					display: none	
+					.main-nav-list
+						list-style: none
+						padding: 0
+						padding-top: 50px
+						text-align: center
+						li
+							font-size: 18px
+							margin-bottom: 10px
+							a
+								color: $accent
+				.nav-xs-label
+					color: white
+					font-family: "FontAwesome"
+					font-size: 2em
+					margin-bottom: 10px
+					float: right
+					display: inline-block
+					margin-right: 50px
+					&:before
+						content: "\f0c9"
+						font-family: "FontAwesome"
+						display: block
+				.nav-xs-checkbox:checked+.nav-xs-label:before
+					content: "\f00d"
+					font-family: "FontAwesome"
+				.nav-xs-checkbox:checked ~ .main-nav
+	  				display: block
+	.main-banner
+		padding-top: 185px
+		margin: 0
+		.main-banner-content
+			max-width: 760px
+			height: 100%
+			margin: 0 auto
+			position: relative
+			z-index: 1
+		h1
+			font-size: 48px
+			font-family: $Black
+		h2
+			font-size: 30px	
+			font-family: $Black
+		p
+			padding: 40px 0 50px
+			font-family: $SemiBold
+			font-size: 17px
+		button
+			margin-bottom: 180px
+	
+.find-hotel
+	padding: 80px 0
+	background: repeating-linear-gradient(-45deg, #e1c92a, #e1c92a 1px, $accent 1px, $accent 8px)
+	h2
+		margin-bottom: 70px
+		text-transform: uppercase	
+	form
+		position: relative
+		z-index: 1
+		.form-group
+			.form-label
+				display: block
+				text-align: left
+			input.form-control
+				border-radius: 5px
+				height: 40px
+				margin-top: 10px
+				margin-right: 17px
+			.form-control-location
+				width: 240px
+			.form-control-date
+				width: 210px
+			.form-control-person
+				width: 130px
+		.btn-find-hotel
+			background-color: #4c4c4c
+			padding: 9px 50px
+			text-transform: uppercase
+			margin-top: 34px
+			margin-left: 20px
+			border-color:  darken(#4c4c4c, 10%)
+			font-family: $SemiBold
+			&:hover
+				background-color: lighten(#4c4c4c, 5%)	
+				border-color: lighten(#4c4c4c, 5%)
+
+#history
+	.container-fluid
+		margin: 0
+		padding: 0
+		.row
+			width: 100%
+			padding: 0
+			margin: 0
+		.col-lg-6, .col-md-6
+			padding: 0
+			margin: 0
+			img
+				width: auto
+		.history-block
+			position: relative
+			background-image: url(../image/mount-bg.gif)
+			background-size: cover
+			background-repeat: no-repeat
+			background-color: #fff
+			padding: 0
+			margin: 0
+			.history-description
+				width: 100%
+				padding: 90px 0 80px 70px
+				max-width: 620px
+				text-align: left
+				h2
+					margin-top: 10px
+					&.black
+						margin-top: 0
+				p
+					margin-top: 50px
+					font-size: 17px	
+				ul
+					list-style: none
+					margin-top: 50px
+					padding: 0
+					li
+						margin-top: 25px
+						font-size: 17px
+						font-family: $Light
+						position: relative
+						padding-left: 45px
+						&:before
+							font-family: 'FontAwesome'
+							content: "\f058"
+							color: $accent2
+							font-size: 30px
+							text-align: center
+							position: absolute
+							top: -10px
+							left: 0
+
+#services
+	ul.service-items
+		list-style: none
+		position: relative
+		margin-bottom: 100px
+		li
+			position: relative
+			text-align: left
+			padding-left: 125px
+			margin-top: 50px
+			i.fa
+				position: absolute
+				top: 0
+				left: 0
+				font-size: 56px
+				color: $accent2
+
+#budget-price
+	padding-top: 20px
+	background-color: $accent2		
+	background-image: url(../image/city.gif)
+	background-position: 0 0
+	background-size: contain
+	background-repeat: no-repeat
+	.budget-price-item
+		width: 100%
+		max-width: 360px
+		background-color: #fff
+		border-radius: 15px
+		padding: 30px 17px 40px
+		margin-top: 30px
+		margin-bottom: 100px
+		.fa
+			font-size: 67px
+			color: #373737
+			margin-bottom: 20px
+		h4
+			font-family: $ExtraBold
+			font-size: 24px	
+		p.price
+			font-family: $SemiBold
+			font-size: 30px
+			background-color: $accent
+			padding: 20px
+			margin: 0 -25px
+			
+		ul
+			list-style: none
+			margin: 0 auto
+			margin-top: 50px
+			padding: 0
+			text-align: center
+			li
+				position: relative
+				margin: 0 auto
+				margin-top: 30px
+				font-size: 17px
+				font-family: $Light
+				text-align: left
+				max-width: 180px
+				padding-left: 25px	
+				.fa
+					position: absolute
+					top: 3px
+					left: 0
+					font-size: 17px
+					color: $accent2
+				p
+						
+
+#booking
+	padding: 90px 0 100px
+	.col-md-4
+		padding: 15px
+		padding-right: 0
+	.col-md-8
+		padding-left: 90px
+	img
+		border-radius: 10px
+		display: block
+		max-width: 100%
+		overflow: hidden
+	h2.black
+		margin-top: 0
+	.form-group
+		margin-top: 35px	
+	ul.nav-tabs
+		border: 2px solid $accent2
+		.nav-item
+			width: 33.333333333333333333%
+			position: relative
+			margin: 0
+			a
+				border-radius: 0
+				position: relative
+				height: 100%
+				color: #373737
+				font-size: 22px
+				font-family: $Regular
+				padding: 33px 70px 33px 100px
+				margin: 0
+				outline: none
+				p
+					margin: 5px 0
+				&:hover, &:active
+					outline: none
+					border-color: transparent
+				&.active
+					background-color: $accent2
+					color: #fff
+					&::after
+						position: absolute
+						top: -1px
+						right: -81px
+						content: ""
+						border: 55px solid transparent
+						border-left: 25px solid transparent
+						border-left-color: $accent2
+						z-index: 100
+					.fa
+						color: #fff
+				.fa
+					position: absolute
+					top: 50%
+					margin-top: -22px
+					left: 40px
+					font-size: 44px
+					color: #373737
+			#booking-hotel-tab.active
+				&::after
+					right: -83px	
+	.tab-content
+		margin-top: 50px
+		text-align: left
+		font-family: $SemiBold
+		font-size: 17px				
+	button
+		margin-top: 60px
+		margin-bottom: 100px
+
+#hot-tours
+	background-color: $accent2
+	padding-bottom: 55px
+	background-image: url(../image/bg-tours.jpg)
+	background-size: contain
+	background-repeat: no-repeat
+	h2.black
+		margin-top: 80px
+		margin-bottom: 15px
+	.hot-tour-item
+		background-color: #fff
+		margin-top: 50px
+		box-shadow: 0 0 6px rgba(0,0,0, 0.36)
+		border-radius: 15px	
+		text-align: center
+		img
+			width: 100%
+			max-width: 100%
+			border-radius: 15px 15px 0 0 
+			margin-bottom: 20px
+		p
+			margin: 0
+			padding: 0
+			line-height: 1
+			&.tour-duration
+				font-family: $Regular
+				font-size: 20px
+			&.country-name
+				font-family: $Black
+				font-size: 28px	
+				margin: 15px 0 25px
+			&.tour-description
+				max-width: 270px
+				line-height: 1.4
+				font-size: 17px
+				font-family: $Regular
+				margin: 0 auto
+			&.tour-price
+				font-family: $Black
+				font-size: 35px
+				margin: 25px 0 30px
+		button
+			margin-bottom: 20px
+			padding: 15px 40px
+			&.btn-booking-tour
+				max-width: 100%
+
+#country-sight
+	background-image: url(../image/bg-sights.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	.col-md-4
+		padding: 0 20
+	.country-sight-items
+		margin-top: 40px
+		margin-bottom: 80px
+		.country-sight-item
+			background-color: #fff
+			border-radius: 15px	
+			padding-bottom: 40px
+			img
+				width: 100%
+				border-top-left-radius: 15px
+				border-top-right-radius: 15px
+			button
+				padding: 17px 40px
+				margin-top: -25px
+			p.country-sight-item-heading
+				font-family: $Black
+				font-size: 25px
+				margin-top: 40px
+			p.country-sight-item-description
+				font-family: $Regular
+				font-size: 17px
+				max-width: 280px
+				margin: 15px auto
+				margin-top: 15px				
+
+.slick-slider.slider-hot-tours
+	.slick-slide
+		transition: all 1s ease
+		&.slick-active
+			margin-left: 0px
+		&.slick-current.slick-center
+			position: relative
+			transform: scale(1.175)
+			z-index: 1000
+			height: 100%
+			&::after
+				position: absolute
+				bottom: -254px
+				left: 0
+				right: 0
+				content: ""
+				border: 175px solid transparent
+				border-top: 80px solid #fff
+				margin: 0 10px
+			&::before
+				position: absolute
+				bottom: -81px
+				left: 0
+				right: 0
+				content: ""
+				width: 52px
+				height: 80px
+				z-index: 2
+				border-radius: 26px
+				margin: 0 auto
+				background-color: #fff
+	.slick-track, .slick-list
+		padding: 70px 0	170px	
+	.slick-next, .slick-prev
+		width: 33%
+		height: 100%
+		z-index: 2
+		text-align: right
+		&::before
+			content: "\f054"
+			font-family: "FontAwesome"
+			font-size: 48px
+			padding: 0 24px
+			color: $accent
+	.slick-prev
+		text-align: left
+		&::before
+			content: "\f053"		
+
+#sale
+	.container-fluid
+		height: 100%
+		position: relative
+		padding: 100px 0 70px
+		.bg-mask
+			text-align: left
+			height: 100%
+			width: 100%
+			padding: 0
+			margin-left: 10%
+			svg
+				width: 0
+				height: 0
+			img
+				clip-path: url(#sale-bg-clip)
+				max-width: 100%
+				height: 100%
+				background-color: #000
+	.sale-item
+		position: absolute
+		top: 0
+		right: 20%
+		max-width: 600px
+		box-shadow: 0 0 3px #000
+		border-radius: 15px
+		margin-top: 225px
+		height: auto
+		text-align: left
+		padding: 40px 30px 45px 50px
+		background-color: rgba(255,255,255,0.9)
+		p.sale-item-heading
+			font-family: $Black
+			font-size: 37px		
+		p.sale-item-period
+			font-family: $Regular
+			font-size: 24px
+		.fa
+			font-size: 46px
+			color: $accent2
+		p.sale-item-description
+			font-family: $Regular
+			font-size: 17px
+			margin-bottom: 20px
+		p.sale-item-price
+			font-family: $Black
+			font-size: 50px
+			display: inline-block
+			margin: 0
+			vertical-align: middle
+		button
+			font-family: $Regular
+			font-size: 15px
+			padding: 17px 30px
+			display: inline-block
+			margin-left: 60px
+			vertical-align: middle
+		ul
+			padding: 0
+			margin-bottom: 20px
+			li
+				display: inline-block
+				font-family: $Regular
+				font-size: 20px
+				margin-right: 60px
+				text-align: center
+				margin-top: 20px							
+#testimonial
+	background-image: url(../image/rome.png)
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	color: #fff
+	padding-bottom: 80px
+	padding-top: 40px
+	.testimonial-wrapper
+		position: relative
+		z-index: 5
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: rgba(31,31,31,0.9)
+		z-index: 2
+	.black
+		z-index: 2
+	.testimonial-slider
+		text-align: center
+		margin-top: 50px
+		.testimonial-item
+			max-width: 1000px
+			margin: 0 auto
+			.testimonial-item-text
+				font-family: $Italic
+				line-height: 1.6
+			.rating
+				margin: 30px 0 50px
+				font-size: 21px
+				span
+					margin-right: 10px
+				.active
+					color: $accent
+			.testimonial-author
+				position: relative
+				img
+					display: inline-block
+					border-radius: 50%
+					width: 70px
+					height: 70px
+					position: absolute
+				.testimonial-author-description
+					height: 70px
+					display: inline-block
+					text-align: left
+					margin-left: 90px
+					.testimonial-author-name
+						font-family: $Black
+						font-size: 24px
+					.testimonial-author-status
+						font-family: $Regular
+						font-size: 16px
+						margin: 0
+		button
+			width: 45px
+			height: 45px
+			z-index: 10
+			&.slick-next
+				right: 50px
+				&::before
+					content: "\f054"
+					font-family: "FontAwesome"
+					font-size: 45px
+					color: $accent
+			&.slick-prev
+				left: 50px
+				&::before
+					content: "\f053"
+					font-family: "FontAwesome"
+					font-size: 45px
+					color: $accent
+
+#contacts
+	padding: 0
+	margin: 0
+	position: relative
+	.container-fluid
+		padding: 0
+		margin: 0
+		.bg-contact-block-img
+			background-image: url(../image/mountains.png)
+			background-size: cover
+			background-repeat: no-repeat
+			color: #fff
+			position: relative
+			padding-top: 80px
+			padding-bottom: 290px
+			h2
+				position: relative
+				z-index: 7
+			img
+				max-width: 100%
+				width: 100%
+				position: absolute
+				bottom: -1px
+				left: 0
+				right: 0
+				z-index: 7	
+			.fa
+				color: $accent
+				font-size: 206px
+				position: absolute
+				bottom: -40px
+				left: 0
+				right: 0
+				z-index: 7
+			&::before
+				content: ""
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				background-color: rgba(0,0,0,0.61)
+		.contact-block
+			.contact-list
+				list-style: none
+				margin: 0
+				padding: 0
+				margin-top: 90px
+				margin-bottom: 120px
+				.contact-list-item
+					text-align: center
+					span
+						display: inline-block
+						text-align: left
+						.contact-block-name
+							font-family: $SemiBold
+							font-size: 17px
+							text-transform: uppercase
+						.contact-block-item
+							font-family: $Regular
+							font-size: 16px
+							line-height: 1.6
+					.icon
+						background-image: url(../image/css_sprites.png)
+						vertical-align: top
+						margin-right: 30px
+						&.mail-icon
+							background-position: -82px -10px
+							width: 54px
+							height: 42px
+						&.phone-icon
+							background-position: -156px -10px
+							width: 36px
+							height: 54px
+						&.address-icon
+							background-position: -10px -10px
+							width: 52px
+							height: 54px	
+					&:nth-child(2)
+						margin: 0 150px
+			ul.contact-social-list
+				list-style: none
+				display: block
+				padding: 0
+				margin: 0
+				margin-bottom: 80px
+				li
+					display: inline-block
+					margin-right: 35px
+					border: 3px solid $accent
+					border-radius: 50%
+					height: 66px
+					width: 66px
+					transition: all 0.5s ease
+					&:last-child
+						margin-right: 0
+					&:hover	
+						border-color: lighten($accent, 20%)
+						a
+							color: lighten(#353535, 20%)	
+					a
+						color: #353535
+						.fa
+							font-size: 30px
+							line-height: 2
+footer
+	padding: 55px 0 60px
+	background-color: $accent
+	text-align: center
+	a
+		color: $accent2
+		&:hover
+			text-decoration: none
+			color: darken($accent2, 10%)
+
+	p
+		font-family: $SemiBold
+		font-size: 17px
+		margin: 0
+		padding: 0
+		&:first-child
+			margin-bottom: 20px						
+			
+.btn-to-top
+	.fa
+		font-size: 4em
+		color: $accent
+		position: fixed
+		bottom: 3%
+		right: 2%
+		z-index: 999
+		&:hover
+			color: darken($accent, 10%)
+
+@import "media"
